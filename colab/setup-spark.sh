@@ -13,7 +13,7 @@ pip install -q findspark
 
 REPO=https://github.com/smduarte/ps2022/raw/master/colab/
 
-JARS_LIBS=(spark-streaming_2.12-$SPARK_VERSION.jar )
+#JARS_LIBS=(spark-streaming_2.12-$SPARK_VERSION.jar )
 
 
 #JARS_KAFKA=(spark-sql-kafka-0-10_2.11-$SPARK_VERSION.jar \
@@ -22,10 +22,10 @@ JARS_LIBS=(spark-streaming_2.12-$SPARK_VERSION.jar )
 #               spark-streaming-kafka-0-8-assembly_2.11-$SPARK_VERSION.jar \
 #               spark-streaming-kafka-0-8_2.11-$SPARK_VERSION.jar)
 
-for jar in "${JARS_LIBS[@]}"
-do
-  echo "Downloading ${jar}..."
-  wget -q -O - $REPO/$jar.gz | gunzip -c > $SPARK_HOME/jars/$jar
-done
+#for jar in "${JARS_LIBS[@]}"
+#do
+#  echo "Downloading ${jar}..."
+#  wget -q -O - $REPO/$jar.gz | gunzip -c > $SPARK_HOME/jars/$jar
+#done
 
 echo "Done"
