@@ -5,9 +5,8 @@ SPARK=spark-$SPARK_VERSION
 export SPARK_HOME=/content/$SPARK-bin-hadoop3.2
 
 echo "Downloading Spark..."
-echo https://www-us.apache.org/dist/spark/$SPARK/$SPARK-bin-hadoop3.2.tgz
 
-wget -q -O /tmp/spark.tgz https://www-us.apache.org/dist/spark/$SPARK/$SPARK-bin-hadoop3.2.tgz
+wget -q -O /tmp/spark.tgz https://dlcdn.apache.org/spark/$SPARK/$SPARK-bin-hadoop3.2.tgz
 echo "Unpacking Spark..."
 tar xf /tmp/spark.tgz
 pip install -q findspark
