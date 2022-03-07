@@ -4,7 +4,7 @@
 Disponíveis no sistema CLIP.
 
 ## Materiais de Apoio:
-A actualizar durante o semestre...
+* [Aula 1](aula1) (Google Colab Setup)
 
 
 <!--
