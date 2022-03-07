@@ -13,7 +13,7 @@ pip install -q findspark
 
 REPO=https://github.com/smduarte/ps2022/raw/master/colab/
 
-JARS_LIBS=(spark-streaming_2.12-3.2.1-$SPARK_VERSION.jar )
+JARS_LIBS=(spark-streaming_2.12-$SPARK_VERSION.jar )
 
 
 #JARS_KAFKA=(spark-sql-kafka-0-10_2.11-$SPARK_VERSION.jar \
