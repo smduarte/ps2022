@@ -8,4 +8,4 @@
 
 ## Materiais:
 
-[Lab1](/ps2022/blob/main/lab1/ps2022_lab1.ipynb)
+[Lab1](https://github.com/smduarte/ps2022/blob/main/lab1/ps2022_lab1.ipynb)
