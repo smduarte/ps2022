@@ -4,7 +4,8 @@
 Disponíveis no sistema CLIP.
 
 ## Materiais de Apoio:
-* [Lab 1](lab1) (Google Colab Setup)
+* [Lab 1](lab1)  - Google Colab Setup)
+* [Lab 2](lab2)  - (Unstructured) Spark Streaming
 
 
 <!--
