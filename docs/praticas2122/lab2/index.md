@@ -1,11 +1,9 @@
-# Aula prática 1
+# Aula prática 2
 
 ## Objectivo
 
-1. Exemplificar como se pode utilizar o Spark no Google Colab.
-
-2. Resolução de exercícios simples de Spark Streaming...
+1. Resolução de exercícios em Spark Streaming, modo não estruturado.
 
 ## Materiais:
 
-[Lab1](https://github.com/smduarte/ps2022/blob/main/lab1/ps2022_lab1.ipynb)
+[Lab2](https://github.com/smduarte/ps2022/blob/main/lab2/ps2022_lab2.ipynb)
