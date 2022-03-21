@@ -7,6 +7,6 @@
 
 ## Materiais:
 
-[Lab3](https://github.com/smduarte/ps2022/blob/main/lab2/ps2022_lab3.ipynb)
+[Lab3](https://github.com/smduarte/ps2022/blob/main/lab3/ps2022_lab3.ipynb)
 
-[Lab2-Solução](https://github.com/smduarte/ps2022/blob/main/lab2/ps2022_lab2_sol.ipynb)
+[Lab2-Solução](https://github.com/smduarte/ps2022/blob/main/lab3/ps2022_lab2_sol.ipynb)
