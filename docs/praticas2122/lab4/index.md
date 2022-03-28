@@ -8,8 +8,8 @@
 
 ## Materiais:
 
-[Lab4.1 - Kafka Streaming](https://github.com/smduarte/ps2022/blob/main/lab4/ps2022_lab4_1.ipynb)
+[Lab4.1 - Kafka Streaming](https://colab.research.google.com/github/smduarte/ps2022/blob/main/lab4/ps2022_lab4_1.ipynb)
 
-[Lab4.2 - Flume + Kafka](https://github.com/smduarte/ps2022/blob/main/lab4/ps2022_lab4_2.ipynb)
+[Lab4.2 - Flume + Kafka](https://colab.research.google.com/github/smduarte/ps2022/blob/main/lab4/ps2022_lab4_2.ipynb)
 
-[Lab3-Solução](https://github.com/smduarte/ps2022/blob/main/lab4/ps2022_lab3_sol.ipynb)
+[Lab3-Solução](https://colab.research.google.com/github/smduarte/ps2022/blob/main/lab4/ps2022_lab3_sol.ipynb)
