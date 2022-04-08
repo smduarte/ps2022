@@ -7,10 +7,11 @@ Created on Mon Apr 1 00:51:20 2022
 """
 
 import sys
+import time
 import datetime
 import zipfile
 import argparse
-import dataclasses, json, socket, threading
+import dataclasses, socket, threading
 from dataclasses import dataclass
 
 @dataclass
@@ -38,10 +39,6 @@ def parse( line ):
   return ParticulateLine(sensor_id = id, sensor_type = type, location = loc, latitude = lat, longitude = lon, timestamp = ts, p1 = p1, p2 = p2)
 
 
-import time
-import sys
-from json import dumps
-from kafka import KafkaProducer
 
 def handleClient(conn, lines, speedup) :
     try:         
