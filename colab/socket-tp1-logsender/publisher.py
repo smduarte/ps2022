@@ -75,7 +75,7 @@ def handleClient(conn, lines, speedup) :
                         
                 dt = parse( line )
                 
-                data = "{} {} {} {} {} {} {}".format(dt.sensor_id, dt.sensor_type, dt.location, dt.latitude, dt.longitude, dt.p1, dt.p2)
+                data = "{} {} {} {} {} {} {}\n".format(dt.sensor_id, dt.sensor_type, dt.location, dt.latitude, dt.longitude, dt.p1, dt.p2)
                 
                 conn.sendall( data.encode() )
                 
