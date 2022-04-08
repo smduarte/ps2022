@@ -8,8 +8,9 @@ Created on Mon Apr 1 00:51:20 2022
 
 import sys
 import datetime
+import zipfile
 import argparse
-import dataclasses, json, socket
+import dataclasses, json, socket, threading
 from dataclasses import dataclass
 
 @dataclass
@@ -48,6 +49,7 @@ def handleClient(conn, lines, speedup) :
         firstWallTime = -1
         for line in lines:
             try:
+                line = line.decode('utf-8')
                 parts = line.split(';')
                 lineTime = datetime.datetime.strptime(parts[5], '%Y-%m-%dT%H:%M:%S')
                 if firstLineTime == -1 :
@@ -75,7 +77,10 @@ def handleClient(conn, lines, speedup) :
                     time.sleep( delay )
                         
                 dt = parse( line )
-                print(dt)
+                
+                data = "{} {} {} {} {} {} {}".format(dt.sensor_id, dt.sensor_type, dt.location, dt.latitude, dt.longitude, dt.p1, dt.p2)
+                
+                conn.sendall( data.encode() )
                 
             except Exception as err:
                 print(err)
@@ -84,7 +89,6 @@ def handleClient(conn, lines, speedup) :
             print(err)
 
 HOST='localhost'
-PORT=
 parser = argparse.ArgumentParser(description='dataset socket publisher...')
 parser.add_argument('--filename', type=str, default='2020-01-06_sds011-pt.csv', help='dataset filename ') 
 parser.add_argument('--speedup', type=int, dest='speedup', default=3600, help='time speedup factor (default: 3600)')
@@ -93,9 +97,8 @@ parser.add_argument('--port', type=int, dest='port', default=7777, help='port fo
 args = parser.parse_args()
 print(args)
 
-f = open(args.filename, "r")
-lines = f.readlines()
-f.close()
+with zipfile.ZipFile(args.filename + '.zip') as z:
+	lines = z.open(args.filename).readlines()
 
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind((HOST, args.port))
